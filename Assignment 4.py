@@ -15,9 +15,14 @@ else:
 
 #Question 2
 Year=int(input("Enter the Year:"))
-if Year%4==0 and Year%100==0 and Year%400==0:
+if Year%4==0:
+   if Year%100==0:
     print("This year is a leap year")
-else:
+   else:
+        if Year%400==0:
+          print("This year is a leap year")
+        
+else :        
     print("This year is not a leap year")
 
 #Question 3
